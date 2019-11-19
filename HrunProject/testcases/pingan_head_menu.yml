@@ -1,0 +1,8 @@
+config:
+    name: "testcase"
+
+teststeps:
+  -
+    name: 首页列表
+    api: api/ckgw_page_list.yml
+

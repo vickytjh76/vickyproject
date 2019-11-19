@@ -1,0 +1,14 @@
+name:  登陆
+request:
+    url: https://www.21cake.com/passport-check.do?type=normal
+    method: POST
+    headers:
+        Content-Type: 'application/json; charset=UTF-8'
+    json:
+        D1ruvfN1sXObmHcnruw: QVOHAzcHF2tiEqugkzYg
+        redirectUrl: Lw==
+        oginName: vickytjh
+        password: abc12345
+        code:
+validate:
+    - eq: ["status_code", 200]

@@ -1,0 +1,4 @@
+testcases:
+-
+    name: 平安城科菜单头列表
+    testcase: testcases/pingan_head_menu.yml

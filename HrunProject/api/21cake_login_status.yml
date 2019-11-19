@@ -1,0 +1,15 @@
+name: 21cake_login_status
+#variables:
+#    var1: value1
+#    var2: value2
+request:
+    url: 'https://www.21cake.com/passport-check-login-status.do'
+    method: GET
+    headers:
+        Content-Type: "application/json"
+#        Cookie: $cookie
+        Cookie: 'PHPSESSID=u34v216mbbktufceinuebh0aq3; uuid=7ce62f86c50346220689f0034547cc41; 21cake_uuid=21cake_uuid751d84b60852c4cf99705e1da9a97fc1; cake_city_id=1; ONEAPM_BI_sessionid=5880.588|1574052983658; gdxidpyhxdE=pn%2FR5%5Ciw6O0v%2F9NhS82P7%2FZdf81XT7YW2%2BLIvi3gyVQ2IX4ou9LdZYi2vGXzTS7d%2Fs%5C3%5CTkBAAbOyi7lxYKczeImHkjcvrc9BJo7hgP1xuwvtGAlo3msfbZsrCenaW%5CY9TveisnYEwkOxyk%5Cj17RH7Bv83oQVP0S0bHgPkxL%2BaXV6suz%3A1574053895122; _9755xjdesxxd_=32; sale_city=%7B%22id%22%3A%221%22%2C%22name%22%3A%22%E4%B8%8A%E6%B5%B7%22%2C%22region_id%22%3A%2222%22%2C%22first%22%3A%22ok%22%7D; YD00858272023987%3AWM_NI=0tU1C1xxHyRx2l4X7qClCqBoGuq0IzMILpx5NOkXjlKJBComthw7E%2FoF80r7dvm7TJO3hCJVRcDUVnz%2FALyi4a8jQadUYKmHn2nfM3UVT5Q%2B0a254W6KOFTDkdMjkpm3NU4%3D; YD00858272023987%3AWM_NIKE=9ca17ae2e6ffcda170e2e6ee94f9748cb884d0d04e94eb8ab2c85e939a9ebbb72181aba494f43a9a9da884ef2af0fea7c3b92af4ac9bd2c23bbca8889ad174f2b4fcb9b67b81b48d92c16585abbfd1cc728f978491fb3f8e91a5b9e96889968ea4ee67b8b8b9d8c825ad9af8d1f13da8aaa3d8d7428deda8a4c95e92bd8cb6d566baf18fadfc63f8bff88bd46ba88b97acf044aeeea287d039978a9cd6d421f4bffed6b75df69581a7d750a9bc838bea7cafed82b6b737e2a3; YD00858272023987%3AWM_TID=u4B%2BV9oE6qRAFFUBEBMs7Gug47yMHwI1; L[loginName]=vickytjh; L[member]=9033768; e77b2d293e99a84e1b4be137dc3622cd=2019-11-18; OZ_RU_2141=9033768; OZ_SI_2141=sTime=1574052983&sIndex=26; OZ_1U_2141=vid=vdd2247712b6f0.0&ctime=1574053165&ltime=1574053107; OZ_1Y_2141=erefer=-&eurl=https%3A//www.21cake.com/&etime=1574052983&ctime=1574053165&ltime=1574053107&compid=2141; token=58181422bd6cb13a2db46c8b4952461d; L[loginTime]=1574053165; SERVERID=20ed8a448e6938b761068a4199b65905|1574053165|1574052982'
+#    json:
+#        key: $var2
+validate:
+    - eq: ["status_code", 200]

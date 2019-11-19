@@ -1,0 +1,29 @@
+- test:
+    name: 登陆
+    api: api/21cake_login.yml
+    extract:
+        - cookie: headers.Set-Cookie
+
+- test:
+    name: 登陆状态
+    api: api/21cake_login_status.yml
+    extract:
+        - Referer_url: headers.Referer
+
+- test:
+    name: 加入购物车
+    api: api/21cake_cart_add_goods.yml
+
+- test:
+    name: 购物车的数量
+    api: api/21cake_cart_count.yml
+    extract:
+        - amount 是否大于0，大于0，走删除购物车商品的接口，如果等于0，则退出该帐
+
+- test:
+    name: 删除购物车的商品
+    api: api/21cake_cart_remove.yml
+
+- test:
+    name: 退出
+    api: api/21cake_logout.yml

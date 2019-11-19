@@ -1,0 +1,13 @@
+name: ckgw_page_list
+variables:
+    uri: 'https://www.pinganut.com/hf-pauct-web/ckgw/ckgw_page_list'
+    var2: '{"jsonrpc":"2.0","method":"TemplatePage.getPageDataByReadID","params":["PG","3","1"]}'
+request:
+    url: $uri
+    method: POST
+    headers:
+        Content-Type: "application/json;charset=UTF-8"
+    json:
+        key: $var2
+validate:
+    - eq: ["status_code", 200]
